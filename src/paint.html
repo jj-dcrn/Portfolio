@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data -->
+    <meta property ="og:site_name" content="julieducarne">
+    <meta property ="og:title" content="Bienvenue sur mon portfolio!">
+    <meta property ="og:description" content="Je suis Julie Ducarne et je t'invite à faire un tour sur mon portfolio!">
+    <meta property ="og:type" content="website">
+    <meta property ="og:url" content="https://julieducarne.be">
+    <meta property ="og:image" content="https://julieducarne.be/assets/images/avatar.png">
+    <meta property ="og:image:width" content="280">
+    <meta property ="og:image:height" content="280">
+
+    <link rel="icon" type="image/x-icon" href="https://julieducarne.be/assets/images/J-remove.png">
+    <title>Paint</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="scripts/app.js" defer></script>
+    </head>
+<body class="paintJS">
+    <header class="header">
+        <a href="index.html" class="header__logo">AV.</a>
+    </header>
+    <section class="paint">
+        <canvas id="canvasPaint"></canvas>
+        <div id="controls">
+            <input type="color" id="colorPicker">
+            <button id="eraser"><i class="fas fa-eraser"></i></button> <!-- Utiliser l'icône de la gomme -->
+            <!-- <button id="pencil"><i class="fas fa-pencil-alt"></i></button> Utiliser l'icône du crayon -->
+            <button id="clearCanvas"><i class="fas fa-trash-alt"></i></button> <!-- Utiliser l'icône de la corbeille pour effacer tout -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__contact">
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="https://julieducarne.be">© 2024  DUCARNE Julie</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="https://dwt.heaj.be/">DWT</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="credits.html">Crédits</a></small>
+            </li>
+        </ul>
+
+        <div class="footer__icon">
+            <div class="social">
+                <a target="_blank" href="https://github.com/jj-dcrn" class="social__link"><i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/" class="social__link"><i class='bx bxl-instagram-alt'></i></a>
+				<a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt" class="social__link"><i class='bx bxl-youtube'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAERjCKABFFUBsNJbPrVEAfGtfL2xoXYMGr0&keywords=julie%20ducarne&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8c229435-f17c-4447-ae95-e48037bcd72f&sid=Ca8&spellCorrectionEnabled=false" class="social__link"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

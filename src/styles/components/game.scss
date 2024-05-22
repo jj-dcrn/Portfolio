@@ -1,0 +1,77 @@
+.training {
+    padding: 0%;
+    padding-top: $margint-3;
+    text-align: center;
+    
+    width: 100vw;
+    background-color: var(--main-color);
+    border-bottom: 5px solid #5a648c;
+
+    &__h1 {
+        margin-bottom: $margint-2;
+        color: var(--bg-color);
+    }
+    &__infos {
+        justify-content: center;
+        margin-bottom: $margint-1;
+
+        &--2 {
+            display: flex;
+            justify-content: space-evenly;
+
+            #score {
+                font-size: $p-tablet;
+                color: var(--bg-color);
+            }
+        }
+    }
+    #timer {
+        font-size: $p-tablet;
+        align-items: center;
+        color: var(--bg-color);
+    }
+    &__area {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        margin-bottom: $margin-2;
+    }
+    
+}
+  
+h1 {
+    margin-bottom: $margint-2;
+}
+
+  
+.target {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #6b759f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+
+  
+#gameTime {
+    padding: 5px 10px;
+    background-color: var(--bg-color);
+    font-size: $p-tablet;
+    border: 1px solid var(--icon-color);
+    border-radius: 15px;
+    margin-bottom: $margint-1;
+}
+
+#startBtn {
+    padding: 5px 10px;
+    background-color: var(--bg-color);
+    font-size: $h3-tablet;
+    border: 1px solid var(--icon-color);
+    border-radius: 15px;
+    margin-bottom: $margint-2;
+}

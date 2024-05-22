@@ -1,0 +1,114 @@
+
+.lettre {
+    padding: 9px;
+}
+
+.intro {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 3%;
+
+    &__title {
+    font-size: $h1-mobile;
+    font-weight: 700;
+    margin-bottom: $margin-2;
+    text-align: center;
+    padding-top: $margin-3;
+    }
+    &__h4 {
+        font-size: 20px;
+        line-height: 1.6;
+        max-width: 60ch;
+        margin-bottom: $margin-3;
+    }
+}
+.motivee {
+    &__txt {
+        font-size: $p-mobile;
+        max-width: 100ch;
+    }
+    &__content {
+        margin-bottom: $margin-3;
+    }
+    &__image {
+        width: 100%;
+        margin-bottom: $margin-4;
+    }
+    .home__h3 {
+        margin-bottom: $margin-1;
+    }
+}
+
+@media (min-width: 481px) {
+    .intro {
+        &__title {
+            font-size: $h1-tablet;
+            margin-bottom: $margint-1;
+        }
+        &__h4 {
+            font-size: 22px;
+            margin-bottom: $margint-3;
+        }
+    }
+    .motivee {
+        &__txt {
+            font-size: $p-tablet;
+            max-width: 60ch;
+        }
+        &__content {
+            margin-bottom: $margint-3;
+        }
+        &__image {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .intro, .motivee {
+        width: 60%;
+        margin: auto 20%;
+
+        p, h4 {
+            margin: auto;
+        }
+    }
+    .intro {margin-top: 3%;}
+}
+
+@media (min-width: 769px) {
+    .intro {
+        h1 {font-size: $h1-desktop; margin-bottom: $margind-2;}
+        h4 {font-size: 24px; margin-bottom: $margind-3;}
+    }
+    .motivee {
+        padding: 0%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+
+        p {font-size: $p-desktop;}
+        h3 {font-size: $h3-desktop; margin-bottom: $margind-1;}
+
+        &__image {
+            width: 90%;
+            margin: auto 5%;        
+        }
+        &__content {
+            margin-bottom: $margind-3;
+            &:last-child {
+                margin-bottom: $margind-2;
+            }
+        }
+        &__image {
+            width: 50%;
+            margin: auto 25%;
+            margin-bottom: $margind-3;
+        }
+        &__txt {
+            max-width: 700px;
+            margin: auto;
+        }
+    }
+}
+

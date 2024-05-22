@@ -1,0 +1,44 @@
+.paintJS {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+.paint {
+    margin: auto;
+    min-height: 100px;
+    margin-top: 100px;
+    padding: $margint-3;
+    border-bottom: 5px solid #5a648c;
+}
+
+#canvasPaint {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: crosshair;
+    margin: auto;
+    align-items: center;
+    max-width: 100vw;
+}
+
+#controls {
+text-align: center;
+margin-top: 10px;
+align-items: center;
+
+.fa-eraser,
+.fa-trash-alt,
+.fa-pencil-alt {
+    width: 50px;
+}
+#colorPicker {
+    margin-top: 10px;
+}
+
+input[type="color"] {
+    margin-right: 10px;
+}
+}
+    

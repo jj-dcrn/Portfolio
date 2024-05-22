@@ -1,0 +1,100 @@
+.credit__link {
+    text-decoration: none;
+    color: var(--main-color);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+.nav-credits {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+
+    &__ul {
+        display: flex;
+        width: 90%;
+        justify-content: flex-end;
+        padding: 0%;
+        list-style: none;
+    }
+    &__el {
+        list-style: none;
+        color: #333333;
+        font-family: "Hind Siliguri", sans-serif;
+        margin: 0 16px;
+        cursor: pointer;
+        &:hover {
+        border-bottom: 1px solid #333333;
+        transition: 0.3s ease-out;
+        }
+        &:visited {
+        color: #333333;
+        }
+    }
+}
+
+.credits {
+    max-width: 100vw;
+    height: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: "Hind Siliguri", sans-serif;
+    padding-left: 8px;
+
+    &__div {
+        margin-bottom: 54px;
+
+        h2 {
+        margin-left: 0.5em;
+        font-size: $h2-mobile;
+        }
+        ul {
+        list-style: none;
+        margin-left: 0.5em;
+        line-height: 1.6;
+        font-size: $p-mobile;
+        }
+        p {
+        margin-left: 0.5em;
+        font-size: $p-mobile;
+        max-width: 90%;
+        }
+    }
+}
+
+footer {
+    overflow-x: hidden;
+}
+
+@media (min-width: 481px) {
+    .credits {
+        h2 {
+        font-size: $h2-tablet;
+        }
+        p,
+        ul {
+        font-size: $p-tablet;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .credits {
+        padding-left: 33px;
+        h2,
+        p,
+        ul {
+        margin-left: 2rem;
+        }
+        h2 {
+        font-size: $h2-desktop;
+        }
+        p,
+        ul {
+        font-size: $p-desktop;
+        }
+    }
+}

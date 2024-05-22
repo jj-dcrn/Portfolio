@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data -->
+    <meta property ="og:site_name" content="julieducarne">
+    <meta property ="og:title" content="Bienvenue sur mon portfolio!">
+    <meta property ="og:description" content="Je suis Julie Ducarne et je t'invite à faire un tour sur mon portfolio!">
+    <meta property ="og:type" content="website">
+    <meta property ="og:url" content="https://julieducarne.be">
+    <meta property ="og:image" content="https://julieducarne.be/assets/images/avatar.png">
+    <meta property ="og:image:width" content="280">
+    <meta property ="og:image:height" content="280">
+
+    <link rel="icon" type="image/x-icon" href="https://julieducarne.be/assets/images/J-remove.png">
+    <title>Julie Ducarne : Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+
+    <link rel="stylesheet" href="styles/app.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script  src="scripts/app.js" defer></script>
+
+</head>
+
+<body id="indexJs">
+
+    <!-- header design -->
+    <header class="header">
+        <a href="index.html" class="header__logo">AV.</a>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section id="canvasize" class="home">
+        <canvas class="canvaHome" id="canvas"></canvas>
+        <div class="home__content">
+            <h3 class="home__h3">Bonjour, je suis</h3>
+            <h1 class="home__title"><span>Julie</span> <span>Ducarne</span></h1>
+            <p class="home__text">Je suis étudiante à l'école HEAJ pour le diplôme d'infographie spécialité Web Design Transmédia.</p>
+            
+            <!-- <img class="home__avatar" src="assets/images/avatar3d.png" alt="avatar 3d de Julie"> -->
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about__img">
+            <img src="assets/images/avatar.png" class="about__avatar" srcset="assets/images/avatar@2x.png" alt="avatar dwt">
+            <img src="assets/images/salutbjr.png" class="about__slt" alt="petit coucou de moi">
+        </div>
+
+        <div class="about__content">
+            <h2 class="heading about__h2">About <span>Me</span></h2>
+            <h3 class="about__h3">
+                Hello&nbsp;! Bienvenue sur mon portfolio&nbsp;! Je suis Angelvibes, 
+                une étudiante passionnée en développement et design web&nbsp;!
+            </h3>
+            <p class="about__p">
+                Ce portfolio présente mes projets et mes centres d'intérêts.
+            </p>
+            <p class="about__p">
+                Merci de votre passage sur mon site et apprenez à me connaître&nbsp;!
+                Si vous avez un feedback à me donner ou des suggestions, faites-le moi savoir. J'adorerais recevoir des conseils&nbsp;!
+            </p>
+
+            <div class="icoones">
+                <a target="_blank" href="https://github.com/jj-dcrn" class="icoones__link"><i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/" class="icoones__link"><i class='bx bxl-instagram-alt'></i></a>
+                <a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt" class="icoones__link"><i class='bx bxl-youtube'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAERjCKABFFUBsNJbPrVEAfGtfL2xoXYMGr0&keywords=julie%20ducarne&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8c229435-f17c-4447-ae95-e48037bcd72f&sid=Ca8&spellCorrectionEnabled=false" class="icoones__link"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a target="_blank" href="motivee.html" class="home__btn">Je suis motivée&nbsp;!</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="formations" id="formations">
+        <h2 class="heading formations__h2">Mes <span>Formations</span></h2>
+
+        <div class="formations__container">
+            <div class="formations__box">
+                <i class='bx bx-code-alt'></i>
+                <h3 class="formations__h3">Web Development</h3>
+                <p class="formations__p">Difficile de faire un site sans un minimum de connaissances en HTML, CSS et JavaScript me direz vous. Et bien oui. C'est pour cela que mes études en sont remplies&nbsp;!</p>
+            </div>
+            <div class="formations__box">
+                <i class='bx bxs-paint'></i>
+                <h3 class="formations__h3">Design Graphique</h3>
+                <p class="formations__p formations__p--2">Un bon site web ne va pas sans un bon design. l'UI et l'UX sont également essentielles à un bon site digne de ce nom. Entre Gestalt et hiérarchie, tout est à prendre en compte&nbsp;!</p>
+            </div>
+            <div class="formations__box">
+                <i class='bx bx-video'></i>
+                <h3 class="formations__h3">Réalisation vidéo</h3>
+                <p class="formations__p formations__p--3">Nous utilisons Adobe After Effect pour faire des prototypes d'applications ou de sites web. Une manière de faire cela sans passer par l'application Figma, utilisée sur tous les projets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading portfolio__h2">Derniers <span>projets</span></h2>
+
+        <div class="portfolio__container">
+            <div class="portfolio__box">
+                <img src="assets/images/copia81.png" srcset="assets/images/copia81@2x.png" alt="copia">
+
+                <a href="https://julieducarne.be/projets/copia" target="_blank">
+                    <div class="portfolio__layer">
+                    <div class="portfolio__content">
+                        <h4 class="portfolio__h4">CopIA</h4>
+                        <p class="portfolio__p">Premier projet de l'option web design, réalisé en octobre 2023.</p>
+                    </div>
+                    <!-- <a href="https://julieducarne.be/projets/copia" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                </div>
+                </a>               
+            </div>
+            <div class="portfolio__box">
+                <img src="assets/images/readimade.png" srcset="assets/images/readimade@2x.png" alt="readimade">
+
+                <a href="https://julieducarne.be/projets/readimade" target="_blank">
+                    <div class="portfolio__layer">
+                        <div class="portfolio__content">
+                            <h4 class="portfolio__h4">ReadImAde</h4>
+                            <p class="portfolio__p">Deuxième projet de DWT. Le défi&nbsp;? Intégrer une liste d'objets tout en les filtrant, le tout en à peine 1 mois.</p>
+                        </div>
+                        <!-- <a href="https://julieducarne.be/projets/readimade" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <img src="assets/images/paycrop.png" srcset="assets/images/paycrop@2x.png" alt="decembre">
+
+                <a href="https://julieducarne.be/projets/decembre" target="_blank">
+                    <div class="portfolio__layer">
+                        <div class="portfolio__content">
+                            <h4 class="portfolio__h4">Décembre</h4>
+                            <p class="portfolio__p">Notre projet de fin d'année, dont le nom n'indique qu'autre que la date de réalisation. Un site de vente d'objets matériels et immatériels, sur un thème bien précis.</p>
+                        </div>
+                        <!-- <a href="https://julieducarne.be/projets/decembre" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <img src="assets/images/rux.png" srcset="assets/images/rux@2x.png" alt="rux">
+
+                <a  href="https://julieducarne.be/projets/rux" target="_blank">
+                    <div class="portfolio__layer">
+                        <div class="portfolio__content">
+                            <h4 class="portfolio__h4">Rux</h4>
+                            <p class="portfolio__p">Un grand projet pour commencer le quadrimestre...Contextualisation dans la décontextualisation.</p>
+                        </div>
+                        <!-- <a href="https://julieducarne.be/projets/rux" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <img src="assets/images/datalaws.png" srcset="assets/images/datalaws@2x.png" alt="DataPlay">
+
+                <a href="https://julieducarne.be/projets/dataplay" target="_blank">
+
+                    <div class="portfolio__layer">
+                        <div class="portfolio__content">                      
+                            <h4 class="portfolio__h4">DataPlay</h4>
+                            <p class="portfolio__p">Un site pour...jouer avec des données. Un projet long et périlleux mais réussi&nbsp;!</p>
+                        </div>
+                        <!-- <a href="https://julieducarne.be/projets/dataplay" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio__box">
+                <img src="assets/images/angel.png" srcset="assets/images/angel@2x.png" alt="BeautyAngel">
+
+                <a href="https://julieducarne.be/projets/beauty_angel" target="_blank">
+                    <div class="portfolio__layer">
+                        <div class="portfolio__content">
+                            <h4 class="portfolio__h4">Beauty Angel</h4>
+                            <p class="portfolio__p">Un projet mettant en scène un produit d'une marque imaginaire...</p>
+                        </div>
+                        <!-- <a href="https://julieducarne.be/projets/beauty_angel" target="_blank"><i class='bx bx-link-external'></i></a> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- centre d'intérets -->
+    <section class="hobby" id="loisirs">
+        <h2 class="heading hobby__h2">Mes activités <span>préférées</span></h2>
+
+        <div class="hobby__wrapper">
+            <div class="hobby__box mySwiper">
+                <div class="hobby__content swiper-wrapper">
+                    <div class="hobby__slide swiper-slide">
+                        <img src="assets/images/drawing.jpeg" alt="illustration de dessin">
+                        <h3>Le dessin</h3>
+                        <p>Dessiner est une de mes passions, que ce soit sur le bon vieux papier, ou version numérique. D'aussi longtemps que je me souvienne, j'ai pratiquement vécu toute ma vie avec un crayon à la main. L'écriture étant une autre de mes passions, difficile de passer outre. Pour moi, exprimer sa créativité est le plus beau des voyages que l'on puisse faire.</p>
+                        <a target="_blank" href="paint.html" class="home__btn">Je veux dessiner</a>
+                    </div>
+                    <div class="hobby__slide swiper-slide">
+                        <img src="assets/images/music.jpeg" alt="illustration de musique">
+                        <h3>La musique</h3>
+                        <p>L'écouter, la chanter, la fredonner, en jouer même, tout est bon dans la musique&nbsp;! J'aime tous les styles et vous serez surpris de voir ma playlist. Du Mozart au dernier rap français, j'écoute de tout, surtout quand je travaille, ça redonne la pêche&nbsp;!</p>
+                        <a target="_blank" href="piano.html" class="home__btn">Jouer quelques notes</a>
+                    </div>
+                    <div class="hobby__slide swiper-slide">
+                        <img src="assets/images/videogames.png" alt="illustration de jeu vidéo">
+                        <h3>Les jeux vidéos</h3>
+                        <p>Comme toutes personnes possédant un bon pc et une bonne carte graphique, j'ai découvert les jeux vidéos. Peut-être un peu trop découvert même, puisque je ne passe plus un jour sans jouer (surtout à Valorant)&nbsp;! Magré tout, j'arrive à garder un très bon équilibre entre jeu et travail. L'un ne m'empêche pas de faire l'autre&nbsp;!</p>
+                        <a target="_blank" href="game.html" class="home__btn">Go go go&nbsp;!</a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="byebye">
+        <svg class="byebye__svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#6B759F" d="M48.1,-66.4C58.8,-58.4,61.6,-39.7,61.9,-23.6C62.3,-7.6,60.4,5.7,53.9,15C47.4,24.3,36.4,29.6,26.6,36.8C16.9,44,8.5,53.2,-3.8,58.4C-16.1,63.7,-32.2,65.1,-45,58.8C-57.9,52.6,-67.5,38.8,-72.2,23.6C-76.9,8.4,-76.6,-8.2,-67.9,-18C-59.1,-27.8,-41.8,-30.7,-29,-38C-16.3,-45.3,-8.1,-57,5.3,-64.2C18.7,-71.5,37.4,-74.4,48.1,-66.4Z" transform="translate(100 100)" />
+        </svg>
+        <ul class="Words">
+            <li class="Words-line">
+              <p>&nbsp;</p>
+              <p>Merci</p>
+            </li>
+            <li class="Words-line">
+              <p>Merci</p>
+              <p>de ton</p>
+            </li>
+            <li class="Words-line">
+              <p>de ton</p>
+              <p>passage</p>
+            </li>
+            <li class="Words-line">
+              <p>passage</p>
+              <p>sur mon</p>
+            </li>
+            <li class="Words-line">
+              <p>sur mon</p>
+              <p>portfolio&nbsp;!</p>
+            </li>
+            <li class="Words-line">
+              <p>portfolio&nbsp;!</p>
+              <p>A bientot&nbsp;!</p>
+            </li>
+            <li class="Words-line">
+              <p>A bientot&nbsp;!</p>
+              <p>&nbsp;</p>
+            </li>
+          </ul>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__contact">
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="https://julieducarne.be">© 2024  DUCARNE Julie</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="https://dwt.heaj.be/">DWT</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" target="_blank" href="credits.html">Crédits</a></small>
+            </li>
+        </ul>
+
+        <div class="footer__icon">
+            <div class="social">
+                <a target="_blank" href="https://github.com/jj-dcrn" class="social__link"><i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/" class="social__link"><i class='bx bxl-instagram-alt'></i></a>
+				<a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt" class="social__link"><i class='bx bxl-youtube'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAERjCKABFFUBsNJbPrVEAfGtfL2xoXYMGr0&keywords=julie%20ducarne&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8c229435-f17c-4447-ae95-e48037bcd72f&sid=Ca8&spellCorrectionEnabled=false" class="social__link"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+
+        <div class="footer__iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
